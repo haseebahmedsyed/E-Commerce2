@@ -16,7 +16,8 @@ process.on('uncaughtException', (err)=>{
 dotenv.config({path : 'backend/config/config.env'})
 
 
-const server = app.listen(process.env.PORT,()=>{
+// const server = app.listen(process.env.PORT,()=>{
+const server = app.listen(3000,()=>{
     console.log(`Server started on Port ${process.env.PORT} and in ${process.env.NODE_ENV} mode`);
 })
 
